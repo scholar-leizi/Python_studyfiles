@@ -1,0 +1,33 @@
+'''
+常见的两种方式：
+    调用sort()列表对象的方法：
+        列表中所有元素默认按照从小到大的顺序排序，可以指定reverse=True(False)进行降序（升序）排序（默认为升序）
+        在原列表中进行元素排序，不生成新的列表
+    调用内置函数sorted()：
+        可以指定reverse=True(False)，进行降序（升序）排序（默认为升序）
+        会产生一个新的列表,原列表不会发生任何改变
+'''
+print('-----用sort排序-----')
+lst1=[98,520,23,124,30,10]
+print('lst1排序前：',lst1,id(lst1))
+lst1.sort()
+print('lst1排序后：',lst1,id(lst1))
+lst2=[65,10,86,938,589,121]
+print('lst2排序前：',lst2)
+lst2.sort(reverse=True)
+print('lst2降序排序后：',lst2)
+lst2.sort(reverse=False)
+print('lst2升序排序后：',lst2)
+#列表标识没有改变，说明是在原列表中进行元素排序
+
+print('-----用sorted排序-----')
+lst3=[976,83,39,20,59,50]
+print('lst3排序之前：',lst3)
+lst4=sorted(lst3)
+print('lst3排序之后：',lst4)
+lst5=[59,20,88,156,69,221]
+print('lst5排序之前：',lst5)
+lst6=sorted(lst5,reverse=True)
+print('lst5降序排序后：',lst6)
+lst7=sorted(lst5,reverse=False)
+print('lst5升序排序后：',lst7)

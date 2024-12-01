@@ -1,0 +1,9 @@
+#常见的数据类型
+#1.整数类型：int-->98
+print(type(98))
+#2.浮点数类型：float-->3.14
+print(type(3.14))
+#3.布尔类型：bool-->True,False
+print(type(True),type(False))
+#4.字符串类型：str-->'人生苦短，我用Python'
+print(type('人生苦短，我用Python'))

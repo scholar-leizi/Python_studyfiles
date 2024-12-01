@@ -1,0 +1,10 @@
+'''
+index()：
+1.如果列表中存在多个相同的元素时，只返回相同元素的第一个元素的索引
+2.如果查询的元素在列表中不存在，会返回ValueError
+3.可以在指定的start和stop之间查询
+'''
+lst=list(['hello',123,3.14,False,'hello','world'])
+print(lst.index('hello'))#如果列表中存在多个相同的元素时，只返回相同元素的第一个元素的索引
+#print(lst.index('Python'))；如果查询的元素在列表中不存在，会返回ValueError
+print(lst.index('hello',1,5))#可以在指定的start和stop之间查询

@@ -1,0 +1,10 @@
+'''获取单个元素：
+1.正向索引从0到N-1；举例：lst(0)
+2.逆向索引从-N到-1；举例：lst(-N)
+3.指定索引不存在，返回IndexError
+'''
+lst=list(['hello',123,3.14,False,'hello','world'])
+print(lst[0])#正向索引从0到N-1；举例：lst(0)
+print(lst[-6])#逆向索引从-N到-1；举例：lst(-N)
+#print(lst[-9])指定索引不存在，返回IndexError
+#print(7)指定索引不存在，返回IndexError
